@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: rubik, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 15px;
+}
+
+.navbar {
+  z-index: 10000000000000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  backdrop-filter: blur(10px);
+  background: #3f3f4067;
+}
+
+.navbar__wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.hamb {
+  display: none;
+}
+
+.popup {
+  display: none;
+}
+.menu > li > a {
+  text-decoration: none;
+}
+
+.navbar__wrap .menu {
+  display: flex;
+}
+
+.navbar__wrap .menu > li {
+  display: flex;
+  align-items: stretch;
+}
+
+.navbar__wrap .menu > li > a {
+  font-weight: bold;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+.navbar__wrap .menu > li > a::after {
+  content: '';
+  width: 0;
+  height: 4px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  transition: width .3s;
+  border-radius: 3px;
+}
+.navbar__wrap .menu > li > a:hover::after {
+  width: 70%;
+}
+  /* PAGE 1 */
+
+.container1 {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://free4kwallpapers.com/uploads/originals/2016/06/23/vintage-mountains-4k-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-1 {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.second-text {
+  width: 50%;
+  height: 50%;
+  text-align: start;
+}
+.second-text h2{
+  cursor: default;
+  font-size: 80px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: #fff;
+}
+.container-2 {
+  width: 100%;
+  height: 110vh;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.page-2 {
+  width: 98%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+/* SCROLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(162, 162, 162);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(104, 104, 104);
+  border-radius: 3px;
+}
+.text_mani {
+  width: 90%;
+  height: 90vh;
+  color: rgb(255, 255, 255);
+}
+.text_mani h1 {
+display: flex;
+justify-content: center;
+font-family: 'Rubik', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+.text_mani p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.9rem;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+.text_mani span {
+  color: rgb(255, 174, 0);
+}
+::selection {
+  background: rgb(104, 104, 104);
+}
+
+
+
+.text_mani .swiper-slide{
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text_mani .swiper-slide img{
+  width: 2400px;
+  height: 600px;
+}
+.text_mani .swiper-button-next, .swiper-rtl .swiper-button-prev {
+right: 20px !important; 
+left: auto;
+background-color: rgba(94, 94, 94, 0.566);
+color: rgb(255, 255, 255);
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
+.text_mani .swiper-button-prev, .swiper-rtl .swiper-button-next {
+left: 20px !important; 
+right: auto;
+background-color: rgba(94, 94, 94, 0.566);
+color: #fff;
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
+.text_mani .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(255, 255, 255);
+}
+
+.container-3 {
+  width: 100%;
+  height: 140vh;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.cont3-wrap {
+  width: 80%;
+  height: 80vh;
+  background-color: rgb(37, 37, 37);
+  flex-wrap: wrap;
+}
+.year {
+  width: 100%;
+  height: 200px;
+}
+.year h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 130px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.year p {
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.secryty {
+  width: 100%;
+  height: 200px;
+}
+.secryty iconify-icon {
+  font-size: 90px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.secryty h1 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.secryty p {
+  margin-top: -10px;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.speed iconify-icon {
+  font-size: 90px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.speed h1 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.speed p {
+  margin-top: -10px;
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-4 {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+.logist {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-log {
+  margin: 40px;
+  width: 400px;
+  height: 300px;
+  background: linear-gradient(rgb(111, 0, 255), rgb(134, 0, 237), rgb(122, 0, 237));
+  border-radius: 20px;
+}

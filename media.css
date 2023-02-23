@@ -1,0 +1,137 @@
+@media (max-width: 1150px) {
+  .container-2 {
+    height: 150vh;
+  }
+  
+}
+
+@media (max-width: 1000px) {
+  .second-text h2 {
+    font-size: 60px;
+  }
+    .navbar__wrap .menu {
+      display: none;
+    }
+  
+    .hamb {
+      display: flex;
+      align-items: center;
+    }
+  
+    .hamb__field {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  
+    .bar {
+      display: block;
+      width: 30px;
+      height: 3px;
+      margin: 6px auto;
+      background-color: #fff;
+      transition: 0.2s;
+    }
+  
+    .popup {
+      position: fixed;
+      top: 75px;
+      left: -100%;
+      width: 70%;
+      height: 100%;
+      background-color: #ffffff27;
+      backdrop-filter: blur(16px);
+      z-index: 100;
+      display: flex;
+      transition: 0.3s;
+    }
+  
+    .popup.open {
+      left: 0;
+    }
+  
+    .popup .menu {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      padding: 50px 0;
+      overflow: auto;
+    }
+  
+    .popup .menu > li {
+      width: 100%;
+    }
+  
+    .popup .menu > li > a {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .popup .menu > li > a:hover {
+      background-color: rgba(86, 86, 86, 0.1);
+    }
+    .hamb__field .bar:nth-child(2) {
+      background-color: orange;
+      position: relative;
+      left: 5px;
+    }
+    .hamb__field.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamb__field.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamb__field.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    body.noscroll {
+      overflow: hidden;
+    }
+  }
+  @media (max-width: 600px)  {
+    .container-2 {
+      height: 200vh;
+    }
+    .second-text h2 {
+      font-size: 40px;
+    }
+    .text-mani p {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 500px) {
+    .year h1 {
+      font-size: 80px;
+      margin-top: 10px;
+    }
+    .secryty iconify-icon {
+      font-size: 70px;
+    }
+    .secryty h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+    .secryty p {
+      font-size: 13px;
+    }
+    .speed iconify-icon {
+      margin-top: 100px;
+      font-size: 70px;
+    }
+    .speed h1 {
+      font-size: 30px;
+    }
+    .speed p {
+      font-size: 13px;
+      text-align: center;
+    }
+  }
